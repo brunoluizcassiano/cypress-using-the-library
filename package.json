@@ -27,6 +27,6 @@
     ]
   },
   "dependencies": {
-    "test-acceptance-cypress": "^1.0.64"
+    "test-acceptance-cypress": "^1.0.65"
   }
 }
