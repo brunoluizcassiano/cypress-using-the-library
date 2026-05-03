@@ -1,13 +1,14 @@
-import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
-import CadastrarListaControle from './cadastrarListaController';
-const cadastrarListaControle = new CadastrarListaControle;
+import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
+import CadastrarListaController from '../controller/cadastrarListaController';
+
+const cadastrarListaController = new CadastrarListaController();
 
 Given("que estamos no fluxo de cadastro de lista no meu board", () => {
-    cadastrarListaControle.realizarCadastramentoNovaLista();
+    cadastrarListaController.realizarCadastramentoNovaLista();
 })
 
 When("realizo o cadastramento de uma nova lista no board", () => {
-    cadastrarListaControle.validarStatusCode();
+    cadastrarListaController.validarStatusCode();
 })
 
 Then("deve-se validar o id e o nome da nova lista cadastrada", () => {
