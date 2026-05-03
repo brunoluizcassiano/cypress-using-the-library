@@ -1,9 +1,0 @@
-{
-  "uri": "https://api.trello.com",
-  "path": "/1/lists",
-  "reqType": "POST",
-  "headers": null,
-  "body": null,
-  "statusCode": 401,
-  "response": "unauthorized permission requested"
-}

@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+           "noEmit": true, // Adicione isso para impedir a emissão de arquivos .ts para .js
+           "target": "es6", // Define a versão do ECMAScript
+           "lib": [
+               "es6",
+               "dom"
+           ], // Bibliotecas padrões, útil para comandos Cypress
+           "allowJs": true, // Permite usar arquivos JavaScript
+           "checkJs": false, // Habilita a verificação de tipos em arquivos JavaScript
+           "resolveJsonModule": true, // Permite a importação de arquivos JSON
+           "module": "commonjs", // Define o sistema de módulos
+           "esModuleInterop": true, // Habilita a interoperabilidade com módulos ES
+           "skipLibCheck": true, // Pula a checagem de tipo das bibliotecas
+           "types": [
+               "cypress"
+           ] // Inclui os tipos do Cypress
+       },
+       "include": [
+           "cypress/**/*.js", // Inclui seus arquivos Cypress JS
+           "node_modules/cypress" // Inclui os tipos do Cypress
+       ]
+   }
